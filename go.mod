@@ -1,4 +1,4 @@
-module github.com/plantoncloud/confluent-rds-cluster-pulumi-module
+module github.com/plantoncloud/confluent-cloud-kafka-pulumi-module
 
 go 1.23.0
 
