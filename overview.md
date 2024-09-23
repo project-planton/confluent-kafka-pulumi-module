@@ -1,3 +1,5 @@
 # Overview
 
-coming soon
+The **GCP Cloud SQL Pulumi Module** provides an easy and efficient way to provision and manage Google Cloud SQL instances using a standardized Kubernetes-like API resource model. This module leverages the **GcpCloudSql** resource, which allows developers to configure and deploy Cloud SQL instances based on the specifications provided in the resource YAML. With this Pulumi module, users can automatically provision databases on Google Cloud with predefined configurations, enabling seamless integration into their infrastructure-as-code (IaC) workflows.
+
+By utilizing this module, developers can create Cloud SQL instances using the Google Cloud Platform (GCP) by providing the required details, such as project ID, credentials, and other essential parameters. The module interacts with the GCP API to create and manage Cloud SQL resources and captures critical information such as instance details, connection information, and other output parameters. These outputs are stored in the resource's `status.stackOutputs`, making it easy to retrieve and use in other parts of the infrastructure.
