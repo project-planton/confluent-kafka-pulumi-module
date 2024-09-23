@@ -2,7 +2,7 @@ package main
 
 import (
 	"github.com/pkg/errors"
-	"github.com/plantoncloud/confluent-rds-cluster-pulumi-module/pkg"
+	"github.com/plantoncloud/confluent-cloud-kafka-pulumi-module/pkg"
 	"github.com/plantoncloud/planton/apis/zzgo/cloud/planton/apis/code2cloud/v1/confluent/confluentcloudkafka"
 	_ "github.com/plantoncloud/planton/apis/zzgo/cloud/planton/apis/iac/v1/stackjob"
 	"github.com/plantoncloud/pulumi-module-golang-commons/pkg/stackinput"
