@@ -2,9 +2,9 @@
 
 ## Overview
 
-The **Confluent Cloud Kafka Pulumi Module** is designed to simplify the deployment and management of Confluent Cloud Kafka clusters across multiple cloud providers. By leveraging Google Cloud Platform (GCP), AWS, and Azure, this module integrates seamlessly with Planton Cloud's unified API framework, which models every API resource using a Kubernetes-like structure with `apiVersion`, `kind`, `metadata`, `spec`, and `status` fields. The `ConfluentCloudKafka` resource defines the necessary specifications for provisioning Kafka clusters in Confluent Cloud, enabling developers to manage their messaging infrastructure as code effortlessly.
+The **Confluent Cloud Kafka Pulumi Module** is designed to simplify the deployment and management of Confluent Cloud Kafka clusters across multiple cloud providers. By leveraging Google Cloud Platform (GCP), AWS, and Azure, this module integrates seamlessly with Planton Cloud's unified API framework, which models every API resource using a Kubernetes-like structure with `apiVersion`, `kind`, `metadata`, `spec`, and `status` fields. The `ConfluentKafka` resource defines the necessary specifications for provisioning Kafka clusters in Confluent Cloud, enabling developers to manage their messaging infrastructure as code effortlessly.
 
-By utilizing this Pulumi module, developers can automate the creation of Kafka clusters with specified configurations such as cloud provider selection, availability zones, and environment isolation. The module interacts with Confluent credentials and other necessary specifications provided in the resource definition, ensuring a streamlined and consistent deployment process. Additionally, the outputs from the deployment, including cluster IDs and endpoints, are captured in the resource's `status.stackOutputs`, allowing users to monitor and manage their Kafka infrastructure directly through the `ConfluentCloudKafka` resource.
+By utilizing this Pulumi module, developers can automate the creation of Kafka clusters with specified configurations such as cloud provider selection, availability zones, and environment isolation. The module interacts with Confluent credentials and other necessary specifications provided in the resource definition, ensuring a streamlined and consistent deployment process. Additionally, the outputs from the deployment, including cluster IDs and endpoints, are captured in the resource's `status.stackOutputs`, allowing users to monitor and manage their Kafka infrastructure directly through the `ConfluentKafka` resource.
 
 ## Important Note
 
@@ -14,7 +14,7 @@ By utilizing this Pulumi module, developers can automate the creation of Kafka c
 
 ### API Resource Features
 
-- **Standardized Structure**: The `ConfluentCloudKafka` API resource follows a consistent schema with `apiVersion`, `kind`, `metadata`, `spec`, and `status` fields. This uniformity ensures compatibility and ease of integration within Kubernetes-like environments, promoting seamless workflow incorporation and tooling interoperability.
+- **Standardized Structure**: The `ConfluentKafka` API resource follows a consistent schema with `apiVersion`, `kind`, `metadata`, `spec`, and `status` fields. This uniformity ensures compatibility and ease of integration within Kubernetes-like environments, promoting seamless workflow incorporation and tooling interoperability.
 
 - **Configurable Specifications**:
   - **Confluent Credential ID**: Securely reference the Confluent credentials required to set up the Pulumi provider, ensuring authenticated and authorized interactions with Confluent Cloud services.
@@ -40,11 +40,11 @@ By utilizing this Pulumi module, developers can automate the creation of Kafka c
 
 ## Installation
 
-To integrate the Confluent Cloud Kafka Pulumi Module into your project, retrieve it from the [GitHub repository](https://github.com/your-repo/confluent-cloud-kafka-pulumi-module). Ensure that you have both Pulumi and Go installed and properly configured in your development environment.
+To integrate the Confluent Cloud Kafka Pulumi Module into your project, retrieve it from the [GitHub repository](https://github.com/your-repo/confluent-kafka-pulumi-module). Ensure that you have both Pulumi and Go installed and properly configured in your development environment.
 
 ```shell
-git clone https://github.com/your-repo/confluent-cloud-kafka-pulumi-module.git
-cd confluent-cloud-kafka-pulumi-module
+git clone https://github.com/your-repo/confluent-kafka-pulumi-module.git
+cd confluent-kafka-pulumi-module
 ```
 
 ## Usage
@@ -55,10 +55,10 @@ Refer to the [example section](#examples) for usage instructions.
 
 ### Input Configuration
 
-The module expects a `ConfluentCloudKafkaStackInput` which includes:
+The module expects a `ConfluentKafkaStackInput` which includes:
 
 - **Pulumi Input**: Configuration details required by Pulumi for managing the stack, such as stack names, project settings, and any necessary Pulumi configurations.
-- **Target API Resource**: The `ConfluentCloudKafka` resource defining the desired Kafka cluster configuration, including cloud provider, availability, and environment specifications.
+- **Target API Resource**: The `ConfluentKafka` resource defining the desired Kafka cluster configuration, including cloud provider, availability, and environment specifications.
 - **Confluent Credential**: Specifications for the Confluent credentials used to authenticate and authorize Pulumi operations, ensuring secure interactions with Confluent Cloud.
 
 ### Exported Outputs
