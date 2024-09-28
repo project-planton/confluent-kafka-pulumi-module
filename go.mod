@@ -2,13 +2,13 @@ module github.com/plantoncloud/confluent-kafka-pulumi-module
 
 go 1.23.0
 
-//replace github.com/plantoncloud/planton => ../../plantoncloud/planton
+//replace github.com/plantoncloud/project-planton => ../../plantoncloud/project-planton
 
 //replace github.com/plantoncloud/pulumi-module-golang-commons => ../../plantoncloud/pulumi-module-golang-commons
 
 require (
 	github.com/pkg/errors v0.9.1
-	github.com/plantoncloud/planton/apis v0.0.0-20240924143033-0c4965a773f5
+	github.com/plantoncloud/project-planton/apis v0.0.0-20240928044211-9168d6c7a46b
 	github.com/plantoncloud/pulumi-module-golang-commons v0.0.0-20240921121830-0ebf2e348a94
 	github.com/pulumi/pulumi/sdk/v3 v3.130.0
 )
