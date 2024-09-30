@@ -1,10 +1,10 @@
 package pkg
 
 import (
-	"github.com/plantoncloud/project-planton/apis/zzgo/cloud/planton/apis/code2cloud/v1/confluent/confluentkafka"
+	confluentkafkav1 "buf.build/gen/go/plantoncloud/project-planton/protocolbuffers/go/project/planton/apis/provider/confluent/confluentkafka/v1"
 	"github.com/pulumi/pulumi/sdk/v3/go/pulumi"
 )
 
-func Resources(ctx *pulumi.Context, stackInput *confluentkafka.ConfluentKafkaStackInput) error {
+func Resources(ctx *pulumi.Context, stackInput *confluentkafkav1.ConfluentKafkaStackInput) error {
 	return nil
 }

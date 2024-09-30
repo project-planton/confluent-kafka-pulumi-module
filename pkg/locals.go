@@ -1,15 +1,15 @@
 package pkg
 
 import (
-	"github.com/plantoncloud/project-planton/apis/zzgo/cloud/planton/apis/code2cloud/v1/confluent/confluentkafka"
+	confluentkafkav1 "buf.build/gen/go/plantoncloud/project-planton/protocolbuffers/go/project/planton/apis/provider/confluent/confluentkafka/v1"
 	"github.com/pulumi/pulumi/sdk/v3/go/pulumi"
 )
 
 type Locals struct {
-	ConfluentKafka *confluentkafka.ConfluentKafka
+	ConfluentKafka *confluentkafkav1.ConfluentKafka
 }
 
-func initializeLocals(ctx *pulumi.Context, stackInput *confluentkafka.ConfluentKafkaStackInput) *Locals {
+func initializeLocals(ctx *pulumi.Context, stackInput *confluentkafkav1.ConfluentKafkaStackInput) *Locals {
 	locals := &Locals{}
 
 	//assign value for the locals variable to make it available across the project
