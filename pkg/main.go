@@ -1,7 +1,7 @@
 package pkg
 
 import (
-	confluentkafkav1 "buf.build/gen/go/plantoncloud/project-planton/protocolbuffers/go/project/planton/apis/provider/confluent/confluentkafka/v1"
+	confluentkafkav1 "buf.build/gen/go/plantoncloud/project-planton/protocolbuffers/go/project/planton/provider/confluent/confluentkafka/v1"
 	"github.com/pulumi/pulumi/sdk/v3/go/pulumi"
 )
 
