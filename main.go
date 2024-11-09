@@ -1,10 +1,10 @@
 package main
 
 import (
-	confluentkafkav1 "buf.build/gen/go/project-planton/apis/protocolbuffers/go/project/planton/provider/confluent/confluentkafka/v1"
 	"github.com/pkg/errors"
 	"github.com/project-planton/confluent-kafka-pulumi-module/pkg"
-	"github.com/project-planton/pulumi-module-golang-commons/pkg/stackinput"
+	confluentkafkav1 "github.com/project-planton/project-planton/apis/go/project/planton/provider/confluent/confluentkafka/v1"
+	"github.com/project-planton/project-planton/pkg/pulmod/stackinput"
 	"github.com/pulumi/pulumi/sdk/v3/go/pulumi"
 )
 
